@@ -215,20 +215,99 @@ body {
 		}		
 	}
 }
-.container {
-}
 
-.photo__img {
-	max-width: 100%;
+.photo {
+	&__img {
+		
+		img {
+			max-width: 100%;
+		}
+	}	
 }
 .grey {
+	padding: 50px 0 110px 0;
+	background-color: #2d2d2d;
+	&__map {
+		text-align: center;
+		h2 {
+			color: #ffffff;
+			font-family: "Nexa Book";
+			font-size: 36px;
+			font-weight: 400;
+			line-height: 22px;
+			letter-spacing: 0.9px;
+			margin-bottom: 5px;
+		}
+		p {
+			color: #a161db;
+			font-family: Nexa;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 22px;
+			letter-spacing: 0.35px;
+			margin-bottom: 30px;
+		}
+		.grey__photo {
+			position: relative;		
+			left: -3%;	
+			img:last-of-type {
+				position: absolute;	
+				display: none;
+				top: 0;	
+				left: 15%;
+			}
+			&:hover img:last-of-type {
+				display: block;
+				top: 0;
+			}
+		}
+	}
 
-	&__map {}
+	&__3picter {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 50px;
+		.sprite-Shape_9 {
+			position: relative;
+			&::before,
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 140px;
+				height: 3px;
+				background-color: #6d6d6d;
+				position: absolute;
+				right: 150%;
+				top: 50%;
+			}
+			&::after {				
+				left: 150%;
+			}
+		}
+	}
 
-	&__3picter {}
-
-	&__text {}
-
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		h3 {
+			color: #ffffff;
+			font-family: "Nexa Book";
+			font-size: 24px;
+			letter-spacing: 0.6px;
+			margin-bottom: 22px;
+		}
+		p  {
+			color: #ffffff;
+			font-family: "Nexa Book";
+			font-size: 12px;
+			line-height: 22px;
+			letter-spacing: 0.3px;
+		}	
+	}
+	&__column {
+		max-width: 300px;
+	}
 	&__time {}
 
 	&__team {}
