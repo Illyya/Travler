@@ -434,7 +434,7 @@ body {
 }
 
 .team-and-text {
-  padding: 80px 0 0 0;
+  padding: 80px 0 35px 0;
 }
 
 .team-and-text__team > h2 {
@@ -579,6 +579,156 @@ body {
   line-height: 22px;
   color: #949494;
   font-weight: 400;
+}
+
+.footer {
+  background-color: #373737;
+  padding: 26px 0 240px 0;
+  border-top: 4px solid #914dcf;
+  color: #ffffff;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 35px;
+}
+
+.footer__logo-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__logo {
+  max-width: 48px;
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+.footer__title {
+  color: #7d7d7d;
+  font-family: "PT Sans";
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+.footer__title span {
+  background-clip: text;
+  color: #ffffff;
+  font-family: "Nexa Black";
+  font-size: 39px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__nav-list li {
+  padding: 0 24px 20px 24px;
+  position: relative;
+}
+
+.footer__nav-list li:last-of-type {
+  padding-right: 0;
+}
+
+.footer__nav-list li:not(:first-of-type)::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 11px;
+  background-color: #767676;
+}
+
+.footer__nav-list a {
+  color: #ffffff;
+  font-family: 'Nexa';
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.footer__middle p {
+  max-width: 451px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-right: 78px;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__contacts li {
+  margin-right: 35px;
+}
+
+.footer__contacts li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer__contacts li a div {
+  margin-right: 7px;
+}
+
+.footer__bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.footer__bottom ul li {
+  margin-right: 15px;
+}
+
+.footer__bottom ul li a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer__bottom p {
+  color: #7e7e7e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 21px;
+  max-width: 762px;
 }
 
 .sprite {

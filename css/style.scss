@@ -330,7 +330,7 @@ body {
 	}
 }
 .team-and-text {
-	padding: 80px 0 0 0;
+	padding: 80px 0 35px 0;
 
 	&__team {
 		> h2 {
@@ -474,22 +474,107 @@ body {
 	}
 }
 .footer {
+	background-color: #373737;
+	padding: 26px 0 240px 0;
+	border-top: 4px solid #914dcf;
+	color: #ffffff;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 35px;
+	}
 
-	&__top {}
+	&__logo-title {
+		display: flex;
+	}
 
-	&__logo-title {}
+	&__logo {		
+		max-width: 48px;
+		max-height: 50px;
+		margin-right: 10px;
+	}
 
-	&__logo {}
+	&__title {
+		color: #7d7d7d;
+		font-family: "PT Sans";
+		font-style: italic;
+		font-size: 12px;
+		letter-spacing: 0.3px;
 
-	&__title {}
+		span {			
+			background-clip: text;
+			color: #ffffff;
+			font-family: "Nexa Black";
+			font-size: 39px;
+			font-weight: 400;
+			font-style: normal;
+			margin-bottom: 8px;
+		}
+	}	
 
-	&__nav {}
+	&__nav-list {
+		display: flex;
+		
+		li {
+			padding: 0 24px 20px 24px;
+			
+			position: relative;
+		}
+		li:last-of-type {
+			padding-right: 0;
+		}
+		li:not(:first-of-type)::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			
+			width: 2px;
+			height: 11px;
+			background-color: #767676;
+		}
+		a {
+			color: #ffffff;
+			font-family: 'Nexa';
+			font-size: 12px;
+			font-weight: 700;
+			
+		}
+	}
 
-	&__nav-list {}
+	&__middle {
+		display: flex;
+		margin-bottom: 50px;
+		p {
+			max-width: 451px;
+			color: #ffffff;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 23px;
+			margin-right: 78px;
+		}
+	}
 
-	&__middle {}
-
-	&__contacts {}
+	&__contacts {
+		display: flex;
+		li {
+			margin-right: 35px;
+			a {
+				display: flex;
+				color: #ffffff;
+				font-family: "PT Sans";
+				font-size: 12px;
+				font-weight: 700;
+				
+				div {
+					margin-right: 7px;
+				}
+			}
+		}
+		
+	}
 
 	&__twitter {}
 
@@ -499,7 +584,30 @@ body {
 
 	&__mail {}
 
-	&__bottom {}
+	&__bottom {
+		ul {
+			display: flex;
+			margin-bottom: 25px;
+			li {
+				margin-right: 15px;
+				a {
+					color: #ffffff;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 12px;
+					font-weight: 400;
+				}
+			}
+		}
+		p {
+			color: #7e7e7e;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11px;
+			font-weight: 400;
+			line-height: 21px;
+			max-width: 762px;
+		}
+		
+	}
 }
 
 .sprite {
