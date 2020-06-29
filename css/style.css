@@ -144,7 +144,6 @@ body {
 }
 
 .header__title span {
-  background-clip: text;
   text-shadow: 0 1px 0 #ffffff;
   color: #6017a3;
   font-family: "Nexa Black";
@@ -725,7 +724,6 @@ body {
 }
 
 .footer__title span {
-  background-clip: text;
   color: #ffffff;
   font-family: "Nexa Black";
   font-size: 39px;
